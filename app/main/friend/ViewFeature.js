@@ -21,7 +21,7 @@ export function createViewFeature(people) {
     return (
         <View style={{
             marginRight: 15,
-        }}>'l
+        }}>
             {
                 people.feature.map((item, index) => {
                     return ItemFeature(item, index);

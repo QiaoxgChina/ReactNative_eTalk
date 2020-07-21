@@ -206,7 +206,6 @@ class FriendScreenClass extends React.Component {
                         <SectionList
                             //指定一开始渲染的元素数量，最好刚刚够填满一个屏幕，这样保证了用最短的时间给用户呈现可见的内容。注意这第一批次渲染的元素不会在滑动过程中被卸载，这样是为了保证用户执行返回顶部的操作时，不需要重新渲染首批元素
                             initialNumToRender={11}
-                            keyExtractor={(item, index) => item + index}
                             renderSectionHeader={this._sectionComp}
                             renderItem={({item, index}) => {
                                 if (item.show) {

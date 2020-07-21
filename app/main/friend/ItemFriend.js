@@ -11,7 +11,7 @@ import {
 export const ItemFriend = (item, navigation) => {
     if (item.type === 1) {
         return (
-            <View>
+            <View  key={item.id + item.title}>
                 <ItemFriendType item={item} nav={navigation} key={item.id + item.title}/>
                 <View style={{flexDirection: 'row', height: 0.5}}>
                     <View style={{backgroundColor: '#ffffff', width: 65}}/>
@@ -21,7 +21,7 @@ export const ItemFriend = (item, navigation) => {
         );
     } else {
         return (
-            <View>
+            <View  key={item.id + item.title}>
                 <ItemPeopleType item={item} nav={navigation}/>
                 <View style={{flexDirection: 'row', height: 0.5}}>
                     <View style={{backgroundColor: '#ffffff', width: 65}}/>
